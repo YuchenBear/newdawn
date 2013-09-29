@@ -16,7 +16,7 @@
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls">
 
     <phone:PhoneApplicationPage.Resources>
-        <DataTemplate x:Key="ToDoListBoxItemTemplate">
+        <DataTemplate x:Key="TopicListBoxItemTemplate">
 
             <Grid HorizontalAlignment="Stretch" Width="420">
                 <Grid.ColumnDefinitions>
@@ -77,7 +77,7 @@
                         x:Name="HottestTopicListBox" 
                         ItemsSource="{Binding HottestTopics}" 
                         Margin="12, 0, 12, 0" Width="440" 
-                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                        ItemTemplate="{StaticResource TopicListBoxItemTemplate}" />
                 </controls:PivotItem>
 
                 <controls:PivotItem Header="Date">
@@ -85,7 +85,7 @@
                         x:Name="DateTopicsListBox" 
                         ItemsSource="{Binding DateTopics}" 
                         Margin="12, 0, 12, 0" Width="440" 
-                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                        ItemTemplate="{StaticResource TopicListBoxItemTemplate}" />
                 </controls:PivotItem>
 
                 <controls:PivotItem Header="Nearby">
@@ -93,7 +93,7 @@
                         x:Name="NearbyListBox" 
                         ItemsSource="{Binding NearbyTopics}" 
                         Margin="12, 0, 12, 0" Width="440" 
-                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                        ItemTemplate="{StaticResource TopicListBoxItemTemplate}" />
                 </controls:PivotItem>
 
                 <controls:PivotItem Header="@">
@@ -101,7 +101,7 @@
                         x:Name="atListBox" 
                         ItemsSource="{Binding atTopics}" 
                         Margin="12, 0, 12, 0" Width="440" 
-                        ItemTemplate="{StaticResource ToDoListBoxItemTemplate}" />
+                        ItemTemplate="{StaticResource TopicListBoxItemTemplate}" />
                 </controls:PivotItem>
 
             </controls:Pivot>

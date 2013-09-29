@@ -46,6 +46,9 @@
                 ItemsSource="{Binding CategoriesList}"
                 DisplayMemberPath="Name">
             </toolkit:ListPicker>
+            
+            <TextBlock Height="30" Text="Description" />
+            <TextBox Height="282" Name="description" Text="" Width="460" />
         </StackPanel>
     </Grid>
 

@@ -34,14 +34,14 @@ namespace sdkLocalDatabaseCS
             if (newTaskNameTextBox.Text.Length > 0)
             {
                 // Create a new topic.
-                Topics newToDoItem = new Topics
+                Topics newTopic = new Topics
                 {
                     Title = newTaskNameTextBox.Text,
                     Category = (TopicCategory)categoriesListPicker.SelectedItem
                 };
 
-                // Add the item to the ViewModel.
-                App.ViewModel.AddTopic(newToDoItem);
+                // Add the topic to the ViewModel.
+                App.ViewModel.AddTopic(newTopic);
 
                 // Return to the main page.
                 if (NavigationService.CanGoBack)
@@ -58,6 +58,11 @@ namespace sdkLocalDatabaseCS
             {
                 NavigationService.GoBack();
             }
+        }
+
+        private void newTaskDescriptionTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
